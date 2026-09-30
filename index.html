@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Cursos de inglés en Estados Unidos | TALK Schools</title>
+<meta name="description" content="Aprende inglés en Estados Unidos con TALK Schools: escuelas en Miami, Aventura, Fort Lauderdale, Atlanta y Boston. Desde 1996, más de 100.000 alumnos de 97 países.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#11159a;      /* azul del logo */
+  --ink:#0a0c4a;       /* azul noche para fondos oscuros */
+  --ink-2:#12166a;     /* segundo fondo oscuro, para alternar */
+  --sky:#3bb4e6;       /* azul cielo del logo */
+  --sun:#ffc221;       /* amarillo del logo: solo botones y detalles */
+  --paper:#f7f9fc;     /* fondo claro principal */
+  --paper-2:#e9eff8;   /* segundo fondo claro */
+  --text:#1b1d3a;
+  --muted:#5a5d78;
+  --line:#dbe2ee;
+  --radius:14px;
+  --wrap:1200px;
+  --head:"Jost",system-ui,sans-serif;
+  --body:"Figtree",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--text);background:var(--paper);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);line-height:1.1;letter-spacing:-.01em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.nb{white-space:nowrap}
+
+/* Botones */
+.btn{position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;gap:10px;font:600 16px/1 var(--body);text-decoration:none;padding:16px 26px;border-radius:999px;border:2px solid transparent;cursor:pointer;transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s ease,color .25s ease,border-color .25s ease}
+.btn::before{content:"";position:absolute;inset:-2px;z-index:-1;border-radius:inherit;transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.6,0,.2,1)}
+.btn:hover{transform:translateY(-3px)}
+.btn:active{transform:translateY(-1px) scale(.98)}
+.btn:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+.btn-sun{background:var(--sun);color:var(--ink)}
+.btn-sun::before{background:var(--ink)}
+.btn-sun:hover{color:#fff;box-shadow:0 14px 28px -12px rgba(10,12,74,.55)}
+.btn-sun::after{content:"→";display:inline-block;width:0;opacity:0;margin-left:-10px;transform:translateX(-6px);transition:width .3s ease,opacity .3s ease,margin .3s ease,transform .3s ease}
+.btn-sun:hover::after{width:1em;opacity:1;margin-left:0;transform:none;color:var(--sun)}
+.btn-line{border-color:currentColor;color:var(--navy);background:transparent}
+.btn-line::before{background:var(--navy)}
+.btn-line:hover{color:#fff;border-color:var(--navy);box-shadow:0 14px 28px -12px rgba(17,21,154,.5)}
+.btn:hover::before{transform:scaleX(1)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* Barra superior */
+.topbar{background:var(--ink);color:#dfe3ff;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:10px;padding-bottom:10px}
+.topbar a{text-decoration:none;font-weight:600;color:#fff}
+.topbar .offer b{color:var(--sun);font-weight:600}
+
+/* Cabecera */
+.site-head{position:sticky;top:0;z-index:20;background:rgba(247,249,252,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.logo img{height:44px;width:auto}
+.nav{display:flex;gap:28px;list-style:none}
+.nav a{text-decoration:none;font-weight:500;font-size:15.5px;color:var(--text)}
+.nav a:hover{color:var(--navy)}
+.head-cta{padding:13px 22px;font-size:15px}
+.menu-btn{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.menu-btn span{display:block;width:24px;height:2px;background:var(--ink);margin:5px auto}
+
+/* Portada */
+.hero{padding:56px 0 0}
+.hero-grid{display:grid;grid-template-columns:1fr 1.08fr;gap:56px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--navy)}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--sun)}
+.hero h1{font-size:clamp(40px,5.2vw,68px);font-weight:700;color:var(--ink);margin:0 0 22px}
+.hero h1 .w{display:inline-block;opacity:0;transform:translateY(.35em);animation:word .7s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes word{to{opacity:1;transform:none}}
+.hero .lead{font-size:19px;color:var(--muted);max-width:30em}
+.hero .actions{display:flex;flex-wrap:wrap;gap:14px;margin:32px 0 0}
+.hero .mark{position:relative;white-space:nowrap}
+.hero .mark svg{position:absolute;left:-2%;bottom:-.16em;width:104%;height:.34em;overflow:visible}
+.hero .mark path{fill:none;stroke:var(--sun);stroke-width:7;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:420;animation:ink 1s .9s cubic-bezier(.6,0,.2,1) forwards}
+@keyframes ink{to{stroke-dashoffset:0}}
+.proof{display:flex;align-items:center;gap:16px;margin-top:36px}
+.faces{display:flex}
+.faces img{width:46px;height:46px;border-radius:50%;border:3px solid var(--paper);object-fit:cover}
+.faces img+img{margin-left:-14px}
+.proof p{font-size:15px;color:var(--muted);line-height:1.35}
+.proof b{display:block;font:700 20px/1.1 var(--head);color:var(--ink)}
+.arches{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:start;position:relative}
+.arch{border-radius:999px;overflow:hidden;aspect-ratio:3/5;background:var(--bg);opacity:0;transform:translateY(30px);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.arch.a1{margin-top:56px;animation-delay:.25s}
+.arch.a2{animation-delay:.4s}
+.arch.a3{margin-top:96px;animation-delay:.55s}
+@keyframes rise{to{opacity:1;transform:none}}
+.spark{position:absolute;width:54px;height:54px;right:-6px;top:10px;color:var(--sun)}
+.spark path{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round}
+.trust{margin-top:56px;padding:26px 0;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:center;gap:14px 40px;flex-wrap:wrap}
+.trust span{font-size:14px;color:var(--muted)}
+.trust img{height:var(--h);width:auto;max-width:140px;object-fit:contain;filter:brightness(.72) contrast(1.1);opacity:.85;transition:opacity .2s,filter .2s}
+.trust img:hover{opacity:1;filter:brightness(.45)}
+
+/* Cifras */
+.stats{background:var(--ink);color:#fff;padding:64px 0}
+.stats ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);text-align:center}
+.stats li+li{border-left:1px solid rgba(255,255,255,.14)}
+.stats strong{display:block;font:700 clamp(40px,4.4vw,56px)/1 var(--head);color:#fff}
+.stats strong small{font-size:.5em;margin-left:4px}
+.stats li>span{display:block;margin:12px auto 0;max-width:14em;color:#c3c8f2;font-size:16px}
+
+/* Encabezado de sección */
+section.block{padding:104px 0}
+.sec-head{max-width:720px;margin-bottom:56px}
+.sec-head h2{font-size:clamp(32px,3.6vw,48px);font-weight:700;color:var(--ink);margin-top:16px}
+.sec-head p{margin-top:16px;color:var(--muted);font-size:18px}
+.dark .sec-head h2{color:#fff}
+.dark .sec-head p{color:#c3c8f2}
+.dark .eyebrow{color:var(--sky)}
+
+/* Objetivos */
+.goals{background:var(--paper)}
+.goal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0 20px}
+.goal{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px 28px;display:grid;grid-template-rows:subgrid;grid-row:span 7;margin-bottom:20px;transition:transform .25s ease,box-shadow .25s ease}
+.goal:hover{transform:translateY(-4px);box-shadow:0 18px 40px -24px rgba(10,12,74,.35)}
+.goal .ico{width:56px;height:56px;border-radius:50%;background:var(--ibg);display:grid;place-items:center;transition:background .3s ease,transform .3s ease}
+.goal .ico svg{width:26px;height:26px;fill:none;stroke:var(--navy);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:stroke .3s ease}
+.goal:hover .ico{background:var(--navy);transform:rotate(-8deg)}
+.goal:hover .ico svg{stroke:var(--sun)}
+.goal h3{font-size:24px;font-weight:600;color:var(--ink);margin:18px 0 10px}
+.goal .course{font-weight:600;color:var(--navy);font-size:15.5px;margin-bottom:18px}
+.goal ul{display:contents;list-style:none}
+.goal li{padding:11px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--muted);align-self:stretch}
+.goal li:first-child{border-top:1px solid var(--line)}
+.goal li:last-child{margin-bottom:24px}
+.goal a{align-self:end;font-weight:600;text-decoration:none;color:var(--navy);font-size:15.5px}
+.goal a::after{content:" →"}
+
+/* Escuelas */
+.schools{background:var(--paper-2)}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+.tab{font:600 16px/1 var(--body);padding:13px 22px;border-radius:999px;border:1.5px solid #c3cde0;background:transparent;color:var(--text);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.tab:hover{border-color:var(--navy)}
+.tab[aria-selected=true]{background:var(--navy);border-color:var(--navy);color:#fff}
+.panels{position:relative;display:grid}
+.panel{grid-area:1/1;display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:auto auto;gap:8px 28px;align-items:end;opacity:0;visibility:hidden;transition:opacity .45s ease}
+.panel.on{opacity:1;visibility:visible}
+.draw{grid-column:1/-1;padding:0 2%}
+.draw img{width:100%;aspect-ratio:1600/570;object-fit:contain;object-position:50% 100%}
+.panel.on .draw img{animation:wipe 1.8s cubic-bezier(.5,0,.2,1) both}
+@keyframes wipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+.polaroid{background:#fff;padding:12px 12px 14px;border-radius:6px;box-shadow:0 18px 40px -22px rgba(10,12,74,.35);transform:rotate(-2deg);align-self:start}
+.polaroid img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:2px}
+.polaroid figcaption{font:500 15px/1.2 var(--head);color:var(--ink);padding:12px 4px 0}
+.card-info{background:#fff;border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;align-self:stretch}
+.card-info h3{font-size:30px;font-weight:700;color:var(--ink)}
+.card-info .zone{color:var(--navy);font-weight:600;font-size:15px;margin-top:4px}
+.card-info ul{list-style:none;margin:16px 0}
+.card-info li{padding:7px 0 7px 22px;position:relative;font-size:15.5px;color:var(--muted)}
+.card-info li::before{content:"";position:absolute;left:0;top:15px;width:8px;height:8px;border-radius:50%;background:var(--sun)}
+.card-info .addr{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);font-size:14.5px;color:var(--muted)}
+.card-info .addr a{font-weight:600;color:var(--navy);text-decoration:none}
+
+.tab-dots{display:none;justify-content:center;gap:8px;margin:-10px 0 22px}
+.tab-dots b{display:block;width:8px;height:8px;border-radius:5px;background:#c3cde0;transition:width .3s ease,background .3s ease}
+.tab-dots b.on{width:24px;background:var(--navy)}
+
+/* Pasos */
+.steps{background:var(--paper)}
+.step-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;position:relative}
+.step{padding:0 28px 0 0;position:relative;z-index:1}
+.step .n{width:52px;height:52px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font:700 20px/1 var(--head);position:relative;z-index:1}
+.track{position:absolute;left:26px;right:calc(25% + 26px);top:25px;height:2px;background:var(--line)}
+.track .fill{position:absolute;inset:0;background:var(--navy);transform-origin:left;transform:scaleX(0);transition:transform 2.2s cubic-bezier(.5,0,.2,1)}
+.track .plane{position:absolute;top:-15px;left:-10px;width:32px;height:32px;color:var(--sun);transition:left 2.2s cubic-bezier(.5,0,.2,1);z-index:2}
+.track.in .fill{transform:scaleX(1)}
+.track.in .plane{left:calc(100% - 22px)}
+.step h3{font-size:22px;font-weight:600;color:var(--ink);margin:24px 0 10px}
+.step p{font-size:15.5px;color:var(--muted)}
+
+/* Opiniones */
+.reviews{background:var(--ink);color:#fff}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev{background:var(--ink-2);border-radius:var(--radius);padding:34px 30px;display:flex;flex-direction:column}
+.rev .q{font:700 64px/.6 var(--head);color:var(--sun);height:30px}
+.rev blockquote{font-size:17.5px;line-height:1.6;color:#eef0ff;margin:6px 0 26px}
+.rev .who{margin-top:auto;padding-top:18px;border-top:1px solid rgba(255,255,255,.14)}
+.rev .who b{display:block;font-weight:600}
+.rev .who span{font-size:14.5px;color:var(--sky)}
+.rev-note{margin-top:26px;font-size:13.5px;color:#9ea4d8;text-align:center}
+
+/* Cierre y formulario */
+.close{background:var(--ink-2);color:#fff}
+.close-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:start}
+.close h2{font-size:clamp(34px,3.8vw,50px);font-weight:700;margin:16px 0 18px}
+.close .lead{color:#c3c8f2;font-size:18px;max-width:28em}
+.talk-direct{margin-top:36px;display:grid;gap:14px}
+.talk-direct a{display:flex;align-items:center;gap:16px;text-decoration:none;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:18px 20px;transition:background .2s}
+.talk-direct a:hover{background:rgba(255,255,255,.1)}
+.talk-direct .ic{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;flex:none}
+.talk-direct .ic svg{width:24px;height:24px}
+.talk-direct small{display:block;color:#aab0e4;font-size:14px}
+.talk-direct strong{font-size:18px}
+form.quote{background:#fff;color:var(--text);border-radius:20px;padding:38px}
+form.quote h3{font-size:26px;color:var(--ink);font-weight:700}
+form.quote > p{color:var(--muted);font-size:15px;margin:6px 0 24px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+.field label{font-size:14px;font-weight:600;color:var(--text)}
+.field input,.field select{font:400 16px var(--body);padding:14px 14px;border:1.5px solid #cfd8e6;border-radius:10px;background:var(--paper);color:var(--text);width:100%}
+.field input:focus,.field select:focus{outline:none;border-color:var(--navy);background:#fff}
+form.quote .btn{width:100%;justify-content:center;margin-top:24px;font-size:17px}
+form.quote .fine{font-size:13px;color:var(--muted);margin-top:14px;text-align:center}
+
+/* Pie */
+footer{background:var(--ink);color:#c3c8f2;padding:72px 0 32px;font-size:14.5px}
+.foot-top{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-top img{height:46px;width:auto}
+.foot-top p{max-width:36em}
+.foot-schools{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;padding:40px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-schools b{display:block;color:#fff;font:600 17px/1.2 var(--head);margin-bottom:8px}
+.foot-schools a{text-decoration:none;color:#fff}
+.foot-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:26px;font-size:13.5px;color:#9ea4d8}
+
+/* Barra fija en móvil */
+.mbar .btn::after,form.quote .btn::after{display:none}
+.mbar .wa::before{display:none}
+.mbar{display:none}
+
+/* Aparición al hacer scroll */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .hero h1 .w{opacity:1;transform:none}
+  .arch{opacity:1;transform:none}
+  .hero .mark path{stroke-dashoffset:0}
+  .rv{opacity:1;transform:none}
+}
+
+/* Tableta */
+@media (max-width:1080px){
+  .nav{gap:20px}
+  .goal-grid{grid-template-columns:repeat(2,1fr)}
+  .step-grid{grid-template-columns:repeat(2,1fr);row-gap:48px}
+  .track{display:none}
+  .rev-grid{grid-template-columns:1fr}
+  .foot-schools{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:900px){
+  .nav,.head-cta{display:none}
+  .menu-btn{display:block}
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .arches{max-width:520px}
+  .panel{grid-template-columns:1fr}
+  .draw{order:1}
+  .card-info{order:2}
+  .polaroid{order:3;transform:rotate(-1.5deg);margin:18px 8px 4px;max-width:440px}
+  .close-grid{grid-template-columns:1fr;gap:40px}
+}
+/* Móvil */
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:76px}
+  .wrap{padding:0 16px}
+  .topbar .offer{display:none}
+  .topbar .wrap{justify-content:center}
+  .site-head .wrap{height:64px}
+  .logo img{height:36px}
+  .hero{padding-top:20px}
+  .arches{gap:10px}
+  .arch.a1{margin-top:28px}
+  .arch.a3{margin-top:48px}
+  .proof{margin-top:28px}
+  .hero .lead{font-size:17px}
+  .hero .actions .btn{flex:1 1 100%;justify-content:center}
+  .trust{margin-top:36px;gap:18px 26px}
+  .trust img{height:calc(var(--h) * .82);max-width:110px}
+  .trust span{flex-basis:100%;text-align:center}
+  .stats{padding:48px 0}
+  .stats ul{grid-template-columns:1fr 1fr;row-gap:36px}
+  .stats li:nth-child(3){border-left:0}
+  .stats strong{font-size:34px}
+  .stats li>span{font-size:14.5px;padding:0 8px}
+  .step-grid{row-gap:32px}
+  .step{display:grid;grid-template-columns:52px 1fr;column-gap:18px;padding:0}
+  .step .n{grid-row:span 2}
+  .step h3{margin:12px 0 6px}
+  section.block{padding:72px 0}
+  .sec-head{margin-bottom:36px}
+  .goal-grid,.step-grid{grid-template-columns:1fr}
+  .tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -16px 24px;padding:0 16px;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 80%,transparent);mask-image:linear-gradient(90deg,#000 80%,transparent)}
+  .tabs.end{-webkit-mask-image:none;mask-image:none}
+  .tab-dots{display:flex}
+  .polaroid{display:block;order:3;transform:rotate(-1.5deg);margin:18px 8px 4px}
+  .draw{order:1}
+  .card-info{order:2}
+  .tab{flex:none}
+  .fgrid{grid-template-columns:1fr}
+  form.quote{padding:26px 20px}
+  .foot-top{flex-direction:column}
+  .foot-schools{grid-template-columns:1fr 1fr}
+  .foot-bottom{flex-direction:column}
+  .draw{overflow:hidden;margin:0 -16px;padding:0}
+  .draw img{width:210%;max-width:none;animation:pan 22s ease-in-out infinite alternate!important;clip-path:none}
+  @keyframes pan{from{transform:translateX(0)}to{transform:translateX(calc(-100% + 100vw))}}
+}
+@media (max-width:640px) and (prefers-reduced-motion:reduce){
+  .panel .draw img{width:100%;animation:none!important}
+}
+@media (max-width:640px){
+  .mbar{display:grid;grid-template-columns:1fr auto;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(247,249,252,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .mbar .btn{justify-content:center;padding:15px 18px}
+  .mbar .wa{background:#25d366;color:#fff;width:52px;padding:0;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="offer">¿Ya estás en Estados Unidos? Inglés desde <b class="nb">$110/semana</b> · negocios desde <b class="nb">$1,250/curso</b></span>
+    <span>Admisiones: <a href="tel:+19545658505" class="nb">+1 (954) 565-8505</a></span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="TALK Schools, inicio"><img src="img/logo-talk.png" alt="TALK Schools" width="104" height="44"></a>
+    <ul class="nav">
+      <li><a href="#escuelas">Escuelas</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#pasos">Visado F-1</a></li>
+      <li><a href="#opiniones">Opiniones</a></li>
+      <li><a href="#presupuesto">Precios</a></li>
+    </ul>
+    <a class="btn btn-sun head-cta" href="#presupuesto">Pide tu presupuesto</a>
+    <button class="menu-btn" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <h1 id="h1"><span class="w" style="animation-delay:.15s">Aprende</span> <span class="w" style="animation-delay:.22s">inglés</span> <span class="w mark" style="animation-delay:.29s">viviendo<svg viewBox="0 0 200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M3 15 C 40 6, 90 5, 130 9 S 185 14, 197 8"/></svg></span> <span class="w" style="animation-delay:.36s">en</span> <span class="w" style="animation-delay:.43s">Estados</span> <span class="w" style="animation-delay:.5s">Unidos</span></h1>
+        <p class="lead">Cinco escuelas en Miami, Aventura, Fort Lauderdale, Atlanta y Boston. Eliges la ciudad y el curso, y empiezas cualquier lunes.</p>
+        <div class="actions">
+          <a class="btn btn-sun" href="#presupuesto">Pide tu presupuesto</a>
+          <a class="btn btn-line" href="#contacto-directo">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.43 9.43 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44a9.38 9.38 0 0 1 6.68 2.77 9.38 9.38 0 0 1 2.76 6.68c0 5.21-4.24 9.44-9.45 9.44zm8.04-17.48A11.3 11.3 0 0 0 12.04.7C5.77.7.67 5.8.67 12.07c0 2 .52 3.96 1.52 5.68L.57 23.7l6.08-1.6a11.33 11.33 0 0 0 5.39 1.37h.01c6.27 0 11.37-5.1 11.37-11.37 0-3.04-1.18-5.9-3.33-8.05z"/></svg>
+            Escríbenos por WhatsApp
+          </a>
+        </div>
+        <div class="proof">
+          <div class="faces" aria-hidden="true"><img src="img/alumna-1-cara.jpg" alt=""><img src="img/alumno-2-cara.jpg" alt=""><img src="img/alumna-3-cara.jpg" alt=""></div>
+          <p><b>100.000+ alumnos</b>de 97 países han estudiado con nosotros</p>
+        </div>
+      </div>
+      <div class="arches">
+        <figure class="arch a1" style="--bg:#a9d8ee"><img src="img/alumna-1.jpg" alt="Estudiante con carpeta y mochila"></figure>
+        <figure class="arch a2" style="--bg:#f5b93d"><img src="img/alumno-2.jpg" alt="Estudiante con auriculares al cuello"></figure>
+        <figure class="arch a3" style="--bg:#b3b6ee"><img src="img/alumna-3.jpg" alt="Estudiante con un café"></figure>
+        <svg class="spark" viewBox="0 0 54 54" aria-hidden="true"><path d="M27 4v14M27 36v14M4 27h14M36 27h14M11 11l8 8M35 35l8 8M43 11l-8 8M19 35l-8 8"/></svg>
+            </div>
+    </div>
+    <div class="trust">
+      <span>Acreditada y reconocida por</span>
+      <img src="img/acr-accet.png" style="--h:28px" alt="ACCET" width="154" height="46"><img src="img/acr-dhs.png" style="--h:36px" alt="U.S. Department of Homeland Security" width="178" height="52"><img src="img/acr-tesol.png" style="--h:42px" alt="TESOL International Association" width="162" height="65"><img src="img/acr-nafsa.png" style="--h:38px" alt="NAFSA" width="145" height="58"><img src="img/acr-ielts.png" style="--h:26px" alt="IELTS" width="144" height="42"><img src="img/acr-atd.png" style="--h:38px" alt="ATD, Association for Talent Development" width="158" height="45">
+    </div>
+  </div>
+</section>
+
+<section class="stats" aria-label="TALK en cifras">
+  <div class="wrap">
+    <ul>
+      <li class="rv"><strong><span class="count" data-to="30">30</span><small>años</small></strong><span>enseñando inglés en EE.&nbsp;UU., desde 1996</span></li>
+      <li class="rv"><strong><span class="count" data-to="75">75</span>&nbsp;%</strong><span>de la clase dedicada a conversar</span></li>
+      <li class="rv"><strong><span class="count" data-to="98">98</span>&nbsp;%</strong><span>de alumnos satisfechos con sus profesores</span></li>
+      <li class="rv"><strong>6,5<small>años</small></strong><span>de media de cada profesor en TALK</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="block goals" id="cursos">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Cursos</span>
+      <h2>¿Qué quieres conseguir con tu inglés?</h2>
+      <p>Elige tu objetivo y te enseñamos el curso que encaja. Todos empiezan cualquier lunes.</p>
+    </div>
+    <div class="goal-grid">
+      <article class="goal rv">
+        <span class="ico" style="--ibg:#dff2fb" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg></span>
+        <h3>Hablar con soltura</h3>
+        <span class="course">Curso Intensivo de Inglés</span>
+        <ul>
+          <li>22 horas de clase a la semana</li>
+          <li>Del nivel principiante al avanzado</li>
+          <li>Válido para la visa de estudiante F-1</li>
+        </ul>
+        <a href="#">Ver el curso</a>
+      </article>
+      <article class="goal rv">
+        <span class="ico" style="--ibg:#fff0c2" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></span>
+        <h3>Entrar en una universidad</h3>
+        <span class="course">Preparación TOEFL e IELTS</span>
+        <ul>
+          <li>Técnicas para cada parte del examen</li>
+          <li>Más de 50 universidades socias</li>
+          <li>Muchas aceptan el nivel 9 de TALK sin TOEFL</li>
+        </ul>
+        <a href="#">Ver el curso</a>
+      </article>
+      <article class="goal rv">
+        <span class="ico" style="--ibg:#e4e5fb" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></span>
+        <h3>Crecer en tu trabajo</h3>
+        <span class="course">Inglés de Negocios</span>
+        <ul>
+          <li>Currículum y carta de presentación</li>
+          <li>Práctica de entrevistas de trabajo</li>
+          <li>18 horas de clase a la semana</li>
+        </ul>
+        <a href="#">Ver el curso</a>
+      </article>
+      <article class="goal rv">
+        <span class="ico" style="--ibg:#dff2fb" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <h3>Venir en familia</h3>
+        <span class="course">Familias y adolescentes</span>
+        <ul>
+          <li>Clases por la mañana, excursiones por la tarde</li>
+          <li>Matrícula, alojamiento y actividades</li>
+          <li>En invierno y en verano</li>
+        </ul>
+        <a href="#">Ver los paquetes</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block schools" id="escuelas">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Escuelas</span>
+      <h2>Cinco ciudades, una misma forma de enseñar</h2>
+      <p>Playa y sol todo el año en Florida, o ambiente universitario en Atlanta y Boston.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-i="0">Miami</button>
+      <button class="tab" role="tab" aria-selected="false" data-i="1">Aventura</button>
+      <button class="tab" role="tab" aria-selected="false" data-i="2">Fort Lauderdale</button>
+      <button class="tab" role="tab" aria-selected="false" data-i="3">Atlanta</button>
+      <button class="tab" role="tab" aria-selected="false" data-i="4">Boston</button>
+    </div>
+    <div class="tab-dots" aria-hidden="true"><b class="on"></b><b></b><b></b><b></b><b></b></div>
+    <div class="panels rv">
+      <div class="panel on" role="tabpanel">
+        <div class="draw"><img src="img/dibujo-miami.webp" alt="Dibujo de Miami: Torres de Brickell, bahía de Biscayne y caseta de socorrista de Miami Beach" loading="lazy"></div>
+        <figure class="polaroid"><img src="img/escuela-miami.jpg" alt="La escuela, en Brickell Avenue" loading="lazy"><figcaption>La escuela, en Brickell Avenue</figcaption></figure>
+        <div class="card-info">
+          <h3>Miami</h3><span class="zone">Brickell, distrito financiero</span>
+          <ul><li>Escuela abierta en 2009 en Brickell Avenue</li><li>9 aulas amplias y luminosas</li><li>Metromover y Metrorail junto a la puerta</li></ul>
+          <p class="addr">1390 Brickell Ave, Miami, FL 33131<br><a href="tel:+13053750126">+1 (305) 375-0126</a></p>
+        </div>
+      </div>
+      <div class="panel" role="tabpanel">
+        <div class="draw"><img src="img/dibujo-aventura.webp" alt="Dibujo de Aventura: Puerto deportivo, torres junto al canal y la torre tobogán de Aventura Mall" loading="lazy"></div>
+        <figure class="polaroid"><img src="img/escuela-aventura.jpg" alt="La escuela, en Concorde Plaza" loading="lazy"><figcaption>La escuela, en Concorde Plaza</figcaption></figure>
+        <div class="card-info">
+          <h3>Aventura</h3><span class="zone">Entre Miami y Fort Lauderdale</span>
+          <ul><li>Escuela abierta en 2007 en Concorde Plaza</li><li>13 aulas y aparcamiento gratuito</li><li>A minutos de Sunny Isles y Golden Beach</li></ul>
+          <p class="addr">19032 NE 29th Ave, Miami, FL 33180<br><a href="tel:+13059319515">+1 (305) 931-9515</a></p>
+        </div>
+      </div>
+      <div class="panel" role="tabpanel">
+        <div class="draw"><img src="img/dibujo-fortlauderdale.webp" alt="Dibujo de Fort Lauderdale: Canales con barcos, palmeras y la playa con su muro ondulado" loading="lazy"></div>
+        <figure class="polaroid"><img src="img/escuela-fortlauderdale.jpg" alt="El patio de la escuela" loading="lazy"><figcaption>El patio de la escuela</figcaption></figure>
+        <div class="card-info">
+          <h3>Fort Lauderdale</h3><span class="zone">Playas, palmeras y sol todo el año</span>
+          <ul><li>12 aulas y patio exterior</li><li>Acceso a la biblioteca de Nova Southeastern University</li><li>Aparcamiento gratuito</li></ul>
+          <p class="addr">3501 S University Dr, Davie, FL 33328<br><a href="tel:+19549906164">+1 (954) 990-6164</a></p>
+        </div>
+      </div>
+      <div class="panel" role="tabpanel">
+        <div class="draw"><img src="img/dibujo-atlanta.webp" alt="Dibujo de Atlanta: Rascacielos de Midtown, la noria SkyView y Piedmont Park" loading="lazy"></div>
+        <figure class="polaroid"><img src="img/escuela-atlanta.jpg" alt="La recepción de la escuela" loading="lazy"><figcaption>La recepción de la escuela</figcaption></figure>
+        <div class="card-info">
+          <h3>Atlanta</h3><span class="zone">Comercio, tecnología y universidades</span>
+          <ul><li>10 aulas y 2 salas para clases privadas</li><li>Centro de estilo loft</li><li>Autobús y metro MARTA muy cerca</li></ul>
+          <p class="addr">2650 N Druid Hills Rd NE, Atlanta, GA 30329<br><a href="tel:+14042499466">+1 (404) 249-9466</a></p>
+        </div>
+      </div>
+      <div class="panel" role="tabpanel">
+        <div class="draw"><img src="img/dibujo-boston.webp" alt="Dibujo de Boston: Casas de Beacon Hill, el Capitolio, el puente Zakim y Fenway Park" loading="lazy"></div>
+        <figure class="polaroid"><img src="img/escuela-boston.jpg" alt="Un aula de la escuela" loading="lazy"><figcaption>Un aula de la escuela</figcaption></figure>
+        <div class="card-info">
+          <h3>Boston</h3><span class="zone">La ciudad de Harvard y el MIT</span>
+          <ul><li>Más de 50 universidades en la zona</li><li>Residencia de estudiantes o casa de familia</li><li>A 2 minutos del metro</li></ul>
+          <p class="addr">89 Brattle Street, Cambridge, MA 02138<br><a href="tel:+16174263500">+1 (617) 426-3500</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block steps" id="pasos">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Antes de viajar</span>
+      <h2>El visado de estudiante, contigo en cada trámite</h2>
+      <p>Es el trámite que más dudas genera. Así lo preparamos juntos.</p>
+    </div>
+    <div class="step-grid">
+      <div class="track rv" aria-hidden="true"><span class="fill"></span><svg class="plane" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z" transform="rotate(90 12 12)"/></svg></div>
+      <div class="step rv"><span class="n">1</span><h3>Elige curso y ciudad</h3><p>Cuéntanos qué buscas y te enviamos un presupuesto a medida.</p></div>
+      <div class="step rv"><span class="n">2</span><h3>Recibe tu I-20</h3><p>Con tu admisión te enviamos el formulario I-20, el documento que necesitas para pedir la visa.</p></div>
+      <div class="step rv"><span class="n">3</span><h3>Consigue la visa F-1</h3><p>Pagas la tasa SEVIS y haces la entrevista en el consulado de Estados Unidos de tu país.</p></div>
+      <div class="step rv"><span class="n">4</span><h3>Empieza un lunes</h3><p>Llegas, te instalas en casa de familia o residencia, y empiezas las clases.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block reviews dark" id="opiniones">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Opiniones</span>
+      <h2>Lo que cuentan nuestros alumnos</h2>
+    </div>
+    <div class="rev-grid">
+      <figure class="rev rv">
+        <span class="q" aria-hidden="true">“</span>
+        <blockquote>La relación entre profesores y alumnos es fantástica. Los profesores nos ayudan de verdad y, lo más importante, mejoramos. Hoy tengo amigos de distintos países y culturas.</blockquote>
+        <figcaption class="who"><b>Vanessa Dos Santos</b><span>Venezuela · TALK Miami</span></figcaption>
+      </figure>
+      <figure class="rev rv">
+        <span class="q" aria-hidden="true">“</span>
+        <blockquote>El personal amable y los profesores expertos hicieron que preparar el TOEFL fuera una experiencia agradable. La recomiendo si buscas horarios flexibles y una enseñanza personalizada.</blockquote>
+        <figcaption class="who"><b>Héctor Hurtado</b><span>Venezuela · TALK Atlanta</span></figcaption>
+      </figure>
+      <figure class="rev rv">
+        <span class="q" aria-hidden="true">“</span>
+        <blockquote>Estudiar en otro país ha sido una de las mejores decisiones que he tomado. No solo he aprendido vocabulario y gramática: me estoy preparando para vivir en un mundo más competitivo.</blockquote>
+        <figcaption class="who"><b>Maritza Mantilla</b><span>Colombia · TALK Fort Lauderdale</span></figcaption>
+      </figure>
+    </div>
+    <p class="rev-note">Opiniones publicadas en talk.edu, traducidas del inglés.</p>
+  </div>
+</section>
+
+<section class="block close" id="presupuesto">
+  <div class="wrap close-grid">
+    <div class="rv">
+      <span class="eyebrow" style="color:var(--sky)">Presupuesto sin compromiso</span>
+      <h2>Hablemos de tu curso</h2>
+      <p class="lead">Nuestro equipo de admisiones te ayuda a elegir el curso y la ciudad que mejor encajan contigo, y te envía el precio con alojamiento incluido si lo necesitas.</p>
+      <div class="talk-direct" id="contacto-directo">
+        <a href="#"><span class="ic" style="background:#25d366"><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.43 9.43 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44a9.38 9.38 0 0 1 6.68 2.77 9.38 9.38 0 0 1 2.76 6.68c0 5.21-4.24 9.44-9.45 9.44zm8.04-17.48A11.3 11.3 0 0 0 12.04.7C5.77.7.67 5.8.67 12.07c0 2 .52 3.96 1.52 5.68L.57 23.7l6.08-1.6a11.33 11.33 0 0 0 5.39 1.37h.01c6.27 0 11.37-5.1 11.37-11.37 0-3.04-1.18-5.9-3.33-8.05z"/></svg></span><span><small>Respuesta rápida</small><strong>Escríbenos por WhatsApp</strong></span></a>
+        <a href="tel:+19545658505"><span class="ic" style="background:var(--sun)"><svg viewBox="0 0 24 24" fill="none" stroke="#0a0c4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><span><small>Oficina central de admisiones</small><strong class="nb">+1 (954) 565-8505</strong></span></a>
+      </div>
+    </div>
+    <form class="quote rv" onsubmit="event.preventDefault()">
+      <h3>Pide tu presupuesto</h3>
+      <p>Te respondemos por email o WhatsApp, como prefieras.</p>
+      <div class="fgrid">
+        <div class="field"><label for="f-nombre">Nombre</label><input id="f-nombre" autocomplete="name"></div>
+        <div class="field"><label for="f-pais">País</label><input id="f-pais" autocomplete="country-name"></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" autocomplete="email"></div>
+        <div class="field"><label for="f-tel">WhatsApp</label><input id="f-tel" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="f-ciudad">Escuela</label><select id="f-ciudad"><option>Aún no lo sé</option><option>Miami</option><option>Aventura</option><option>Fort Lauderdale</option><option>Atlanta</option><option>Boston</option></select></div>
+        <div class="field"><label for="f-obj">Objetivo</label><select id="f-obj"><option>Hablar con soltura</option><option>Entrar en una universidad</option><option>Crecer en mi trabajo</option><option>Venir en familia</option></select></div>
+      </div>
+      <button class="btn btn-sun" type="submit">Recibir mi presupuesto</button>
+      <p class="fine">Sin compromiso. No compartimos tus datos.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <img src="img/logo-talk-blanco.png" alt="TALK Schools" width="109" height="46">
+      <p>Las escuelas TALK están acreditadas por ACCET y por el Departamento de Seguridad Nacional de EE.&nbsp;UU., y son miembros de TESOL, NAFSA, IELTS y ATD. TALK Schools forma parte de TALK Education Group.</p>
+    </div>
+    <div class="foot-schools">
+      <div><b>Miami</b>1390 Brickell Ave<br>Miami, FL 33131<br><a href="tel:+13053750126">+1 (305) 375-0126</a></div>
+      <div><b>Aventura</b>19032 NE 29th Ave<br>Miami, FL 33180<br><a href="tel:+13059319515">+1 (305) 931-9515</a></div>
+      <div><b>Fort Lauderdale</b>3501 S University Dr<br>Davie, FL 33328<br><a href="tel:+19549906164">+1 (954) 990-6164</a></div>
+      <div><b>Atlanta</b>2650 N Druid Hills Rd NE<br>Atlanta, GA 30329<br><a href="tel:+14042499466">+1 (404) 249-9466</a></div>
+      <div><b>Boston</b>89 Brattle Street<br>Cambridge, MA 02138<br><a href="tel:+16174263500">+1 (617) 426-3500</a></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 TALK Schools. Todos los derechos reservados.</span>
+      <span>Aviso legal · Privacidad · Cookies</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-sun" href="#presupuesto">Pide tu presupuesto</a>
+  <a class="btn wa" href="#contacto-directo" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.43 9.43 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44a9.38 9.38 0 0 1 6.68 2.77 9.38 9.38 0 0 1 2.76 6.68c0 5.21-4.24 9.44-9.45 9.44zm8.04-17.48A11.3 11.3 0 0 0 12.04.7C5.77.7.67 5.8.67 12.07c0 2 .52 3.96 1.52 5.68L.57 23.7l6.08-1.6a11.33 11.33 0 0 0 5.39 1.37h.01c6.27 0 11.37-5.1 11.37-11.37 0-3.04-1.18-5.9-3.33-8.05z"/></svg></a>
+</div>
+
+<script>
+// Pestañas de escuelas (todas las fichas ocupan la misma celda: la página no salta)
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  var dots=[].slice.call(document.querySelectorAll('.tab-dots b'));
+  var strip=document.querySelector('.tabs'), cur=0;
+  function show(n){
+    cur=(n+tabs.length)%tabs.length;
+    tabs.forEach(function(x,k){x.setAttribute('aria-selected',k===cur)});
+    panels.forEach(function(p,k){p.classList.toggle('on',k===cur)});
+    dots.forEach(function(d,k){d.classList.toggle('on',k===cur)});
+    var t=tabs[cur], tr=t.getBoundingClientRect(), sr=strip.getBoundingClientRect(); strip.scrollTo({left:strip.scrollLeft+tr.left-sr.left-sr.width/2+tr.width/2,behavior:'smooth'});
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){show(+t.dataset.i)})});
+  strip.addEventListener('scroll',function(){strip.classList.toggle('end',strip.scrollLeft+strip.clientWidth>=strip.scrollWidth-4)});
+  var x0=null, box=document.querySelector('.panels');
+  box.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  box.addEventListener('touchend',function(e){ if(x0===null) return; var dx=e.changedTouches[0].clientX-x0; if(Math.abs(dx)>50) show(cur+(dx<0?1:-1)); x0=null; });
+})();
+
+// Aparición suave al hacer scroll + contadores
+(function(){
+  var fmt=function(n){return n.toLocaleString('es-ES')};
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      e.target.classList.add('in');
+      e.target.querySelectorAll('.count').forEach(function(c){
+        var to=+c.dataset.to, t0=null;
+        if(matchMedia('(prefers-reduced-motion: reduce)').matches){c.textContent=fmt(to);return}
+        (function step(ts){ if(!t0) t0=ts; var p=Math.min((ts-t0)/1400,1); c.textContent=fmt(Math.round(to*(1-Math.pow(1-p,3)))); if(p<1) requestAnimationFrame(step); })(performance.now());
+      });
+      io.unobserve(e.target);
+    });
+  },{threshold:.18});
+  document.querySelectorAll('.rv').forEach(function(el,k){ el.style.transitionDelay=(k%4)*0.08+'s'; io.observe(el); });
+})();
+</script>
+</body>
+</html>
